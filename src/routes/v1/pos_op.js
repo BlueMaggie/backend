@@ -18,7 +18,7 @@ router.get('/v1/get_pos', async (ctx,next)=>{   //just for test
     ctx.body={
         code:0,
         msg:info==[]?'success':'fail',
-        pos:info
+        data:info
     }
     await next();
 })
